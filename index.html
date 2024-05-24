@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaPointlb</title>
+    <link rel="stylesheet" href="pizzastyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://kit.fontawesome.com/ad84a263ca.js" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+ 
+  <script>
+    var x=document.getElementById('login');
+    
+    var z=document.getElementById('btn');
+    
+    function rserve()
+    {
+        x.style.left='50px';
+        
+        z.style.left='0px';
+    }
+</script>
+
+<script>
+    var modal = document.getElementById('reserv-form');
+    window.onclick = function(event) 
+    {
+       
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+        
+    }
+   
+    
+</script>
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("header").addClass("black");
+        }
+        else{
+            $("header").removeClass("black");
+        }
+    });
+</script>
+</head>
+<body>
+   <header>
+    <a href="#" class="logo"> <i class="fas fa-utensils"></i>Pizza Point</a>
+<div id="menu-bar" class="fas fa-bars"></div>
+    <nav class="navbar">
+        
+            <a href="pizzaweb1.html">HOME</a>
+            <a href="#menu">MENU</a>
+            <a href="http://localhost/web-projectpresent/page3.php">GALLERY</a>
+            <a href="#footer">ABOUT</a>
+            <a href="#footer">TEAM</a>
+            <a href="#footer">CONTACT</a>
+            
+        
+    </nav>
+    <button class='reservnbtn' onclick="document.getElementById('reserv-form').style.display='block'" style="width:auto;">RESERVATION</button>
+   </header>
+   <div id='reserv-form'class='reserv-page'>
+    <div class="form-box">
+        <div class='button-box'>
+          
+            <button class="btn2" type='button'onclick='reserv()'>RESERVATION</button>
+            
+        </div>
+        <form id='reserv' >
+            <input type='text'class='input-field'placeholder='RESERVATION type' required >
+    <input type='number'class='input-field'placeholder='Number of people' required>
+    <a href="mailto:pizza@gmail.com">help</a>
+    <br>
+    <button type='submit'class='submit-btn'>RESERVE</button>
+ </form>
+</div>
+</div>
+
+   <section class="home" id="home">
+    <div class="content">
+        <h3>Welcome to Pizza Point</h3>
+        <h1>Rich Healthy and Natural Food</h1>
+        <p>A Pizza Point  is a restaurant focusing on pizza. As well as pizza, dishes Pizza Point can include kebab, salads and pasta..</p>
+        <div class="search">
+        
+            <input type="text" placeholder="Search Food" required>
+        </div>
+    
+        <div class="submit">
+            
+            <a href="#">Submit</a>
+        </div>
+    </div>
+
+</section>
+<br><br><br><br><br>
+<div id="menu">
+
+
+<div class="head">
+    <h1>Restaurant Food</h1>
+    <h3>&mdash;Menu&mdash;</h3>
+</div>
+<div class="food-items">
+    <img src="images/cheese.webp" alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>cheese-Pizza</h5>
+    <h5 class="price">$9</h5>
+        </div>
+        <p>
+         cheese-Pizza is a type of pizza that is made  with cheese as the primary topping. It typically consists of a pizza crust, tomato sauce, and a generous layer of cheese on top. The most common type of cheese used on cheese pizza are mozzarella, parmesan, and cheddar.
+         he Most Common Type Of Cheese Used On Cheese Pizza Are Mozzarella, Parmesan, And Cheddar.
+        </p>
+       <a href="order.html" class="o1">Order Now</a>
+        
+    </div>
+</div>
+<div class="food-items">
+    <img src="images/vegeterian.jpg" alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>Veggie Pizza</h5>
+    <h5 class="price">$12</h5>
+        </div>
+        <p>
+            Lebanes Pizza Is A Flat Savory Pie Made In The Style Of The Cuisine Of The Middle Eastern Country Of Lebanon. Like Most Other Pizzas, The Lebanese Version Is Typically Round And Often Includes Cheese, Meat And/Or Vegetables Along With Fragrant Herbs.
+            he Most Common Type Of Cheese Used On Cheese Pizza Are Mozzarella, Parmesan, And Cheddar.        </p>
+            <a href="order.html" class="o1">Order Now</a>
+        
+    </div>
+</div>
+<div class="food-items">
+    <img src="images/subreme.webp" alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>subreme-pizza</h5>
+    <h5 class="price">$14</h5>
+        </div>
+        <p>
+            Supreme pizza is a type of pizza that is typically loaded with various toppings. Meats, vegetables, and even sometimes fruit can be found on supreme pizzas. This makes them extremely hearty and filling, perfect for a night in with friends or family.
+            he Most Common Type Of Cheese Used On Cheese Pizza Are Mozzarella, Parmesan, And Cheddar.
+        </p>
+        <a href="order.html" class="o1">Order Now</a>
+        
+    </div>
+</div>
+<div class="food-items">
+    <img src="images/thework.webp"alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>The work-pizza</h5>
+    <h5 class="price">$18</h5>
+        </div>
+        <p>
+       Lebanes pizza is a flat savory pie made in the style of the cuisine of the Middle Eastern country of Lebanon. Like most other pizzas, the Lebanese version is typically round and often includes cheese, meat and/or vegetables along with fragrant herbs.
+       he Most Common Type Of Cheese Used On Cheese Pizza Are Mozzarella
+    </p>
+    <a href="order.html" class="o1">Order Now</a>
+        
+    </div>
+</div>
+<div class="food-items">
+    <img src="images/tunasalad.jpeg" alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>Tuna-Salad</h5>
+    <h5 class="price">$5</h5>
+        </div>
+        <p>Tuna salad is a salad dish consisting of tuna and mayonnaise. The tuna used is usually pre-cooked, canned, and packaged in water or oil. Pickles, celery, relish, and onion are popular ingredients to add. When the mixture is placed on bread, it makes a tuna salad sandwich. 
+
+        </p>
+        <a href="order.html" class="o1">Order Now</a>
+        
+    </div>
+</div>
+<div class="food-items">
+    <img src="images/salad.jpg" alt="">
+    <div class="details">
+        <div class="details-sub">
+            <h5>Farmers-Salad</h5>
+    <h5 class="price">$7</h5>
+        </div>
+        <p>
+            A salad is a dish consisting of mixed ingredients, frequently vegetables. They are typically served chilled or at room temperature, though some can be served warm. Condiments and salad dressings, which exist in a variety of flavors, are often used to enhance a salad.
+        </p>
+        <a href="order.html" class="o1">Order Now</a>
+        
+    </div>
+</div>
+</div>
+<footer id="footer">
+    <div class="row">
+        <div class="col">
+            <img src="images/pizzapoint.jpg" class="logo1">
+            <p>Greetings and welcome to Pizza point! We are delighted to see you as a part of our community. Feel free to discover, interact, and collaborate with us to create something wonderful!!</p>
+        </div>
+        <div class="col">
+            <h3>Office <div class="underline"><span></span></div></h3>
+            <p>Lebanon,Beirut</p>
+            <p>Achrafieh</p>
+            <p>+961-03/100200</p>
+            <p  class="email_id"><a href="mailto:PizzaPoint@hotmail.com">PizzaPoint@hotmail.com</a></p>
+        </div>
+        <div class="col">
+            <h3>Links <div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li> 
+                <li><a href="">Feautures</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter <div class="underline"><span></span></div></h3>
+            <form class="form1" action="">
+                <i class=" fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="Submit"><i class=" fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="c">Copy right ©2024 PizzaPoint</p>
+   </footer>
+   <script>
+    let menu=document.querySelector('#menu-bar');
+    let navbar=document.querySelector('.navbar');
+    
+    menu.onclick = () => {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+       
+    }
+   
+
+ </script>
+</body>
+</html>

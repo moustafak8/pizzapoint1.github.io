@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="pizzastyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <script src="https://kit.fontawesome.com/ad84a263ca.js" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()){
+            $("header").addClass("black");
+        }
+        else{
+            $("header").removeClass("black");
+        }
+    });
+</script>
+
+<body class="orderfood">
+    
+
+   
+    <header>
+        <a href="#" class="logo"> <i class="fas fa-utensils"></i>Pizza Point</a>
+    <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            
+                <a href="pizzaweb1.html">HOME</a>
+                <a href="pizzaweb1.html#menu">MENU</a>
+                <a href="http://localhost/web-projectpresent/page3.php">GALLERY</a>
+                <a href="pizzaweb1.html#footer">ABOUT</a>
+                <a href="pizzaweb1.html#footer">TEAM</a>
+                <a href="pizzaweb1.html#footer">CONTACT</a>
+                
+            
+        </nav>
+        <button class='reservnbtn' onclick="document.getElementById('reserv-form').style.display='block'" style="width:auto;">RESERVATION</button>
+       </header>
+    </section>
+    <!-- Navbar Section Ends Here -->
+
+    <!-- fOOD sEARCH Section Starts Here -->
+    <section class="orderbody">
+
+    
+    <section class="food-search">
+        <div class="container">
+            
+            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+
+            <form action="#" class="order">
+                <fieldset>
+                    <legend>Selected Food</legend>
+
+                    <div class="food-menu-img">
+                        <img src="images/cheese.webp" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    </div>
+    
+                    <div class="food-menu-desc">
+                        <h3>Cheese Pizza</h3>
+                        <p class="food-price">9$</p>
+
+                        <div class="order-label">Quantity</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full-name" placeholder="E.g. mustafa kamel" class="input-responsive" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="E.g 03717898" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g. hi@gmail.com" class="input-responsive" required>
+
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="3" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                </fieldset>
+
+            </form>
+
+        </div>
+    
+    <!-- fOOD sEARCH Section Ends Here -->
+
+    <!-- social Section Starts Here -->
+    <section class="orderfooter">
+
+   
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends Here -->
+
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p class="copright">All rights reserved. Designed By <span>PIZZA POINT</span> </p>
+        </div>
+    </section>
+</section>
+</section>
+
+    <!-- footer Section Ends Here -->
+
+
+</body>
+</html>

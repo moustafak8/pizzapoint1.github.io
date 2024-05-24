@@ -1,0 +1,915 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    
+}
+section{
+    padding: 2rem 9%;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7) url('images/food.jpg') center center fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background-blend-mode: darken;
+
+
+}
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .content h1{
+    font-size: 50px;
+    text-align: center;
+}
+.home .content h3{
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+.home .content p{
+    text-align: center;
+    margin-top: 17px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 5px 2px (0,0,0,0.1);
+   
+    height: 10px;
+}
+header.black {
+    background: #cc0707;
+   
+   
+}
+header .logo{
+    
+    font-size: 20px;
+    margin-left: -120px;
+   
+    font-weight: bolder;
+    color: orangered;
+}
+header .logo i{
+    padding-right: 3px;
+    
+}
+.o1{
+    
+   
+        margin-right: -130px;
+        
+        height: 40px;
+        color: white;
+           float: right;
+           background: orangered;
+           border: none;
+           font-size: 16px;
+           font-weight: 600;
+           border-radius: 5px;
+           width: 180px;
+           cursor: pointer;
+      text-align: center;
+      padding-top: 10px;
+      
+       }
+       .o1:hover{
+        color: white;
+       }
+
+button{
+   
+    margin-right: -130px;
+    
+    height: 40px;
+    color: white;
+       float: right;
+       background: orangered;
+       border: none;
+       font-size: 16px;
+       font-weight: 600;
+       border-radius: 5px;
+       width: 180px;
+       cursor: pointer;
+   }
+
+header .navbar a{
+    font-size: 20px;
+    margin-left: 30px;
+    padding: 4px;
+    color: white;
+    transition: 1.5s;
+    border-radius: 10pxs;
+   
+}
+header .navbar a:hover{
+    
+    box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+.navbar1{
+    background-color: black;
+    height: 20px;
+}
+
+#menu-bar{
+    font-size: 20px;
+    cursor: pointer;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    padding: 5px 15px ;
+    display: none;
+}
+.search input{
+    
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 30%;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+.submit{
+    margin-top: 30px;
+   
+}
+
+
+.submit a{
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: orangered;
+    width: 20px;
+}
+#menu{
+    background-color: aliceblue;
+    padding: 0 10px 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+.head{
+    background: orangered;
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.head h1{
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.head h3{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: .2s ease-in-out;
+
+}
+.food-items a:hover{
+    color: white;
+
+}
+.food-items:hover{
+    border: 5px solid orangered;
+    
+}
+
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+
+
+}
+
+
+button:active {
+  background-color: orangered;
+  box-shadow: 0 5px #0e0e0e;
+  transform: translateY(4px);
+}
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.details{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto ;
+
+}
+.details-sub h5{
+font-weight: 600;
+font-size: 18px;
+
+}
+.price{
+    text-align: right;
+
+}
+.details p{
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+}
+.details button{
+    background: orangered;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+
+
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    margin-top: 5px;
+   margin-left: px;
+    width: 140%;
+    height: 50px;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+    margin-top: 20px;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color:orangered;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color:rgb(11, 11, 11);
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    margin-top: 30px;
+    margin-left: 0;
+   
+    
+   
+}
+.orderfood{
+     background-image: url(images/bg5.jpg);
+     
+     width: 100%;
+     
+    
+}
+
+.food-search input[type="search"]{
+    width: 20%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.orderfooter{
+    margin-top: -40px;
+}
+.copright{
+    margin-top: -30px;
+    color: white;
+}
+.copright span{
+    color: orangered;
+    cursor: pointer;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+    color: white;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+legend{
+    color: white;
+}
+
+
+/* CSS for Social */
+.social ul{
+    
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    
+    width: 96%;
+  
+    padding: 1%;
+    margin-bottom: 3%;
+    
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#reserv-form
+{
+    
+    background: rgb(2, 2, 2);
+    display: none;
+	float: right;
+    height: 99vh;
+	padding: 10px;
+    
+}
+.form-box
+{
+	
+    width:400px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.7);
+	padding:10px;
+    overflow: hidden;
+   
+}
+.button-box
+{
+    
+    background: orangered;
+	background-size: cover;
+	width: 100%;
+	letter-spacing: 1px;
+	
+	align-items: center;
+	position: center;
+}
+.button-box .btn2{
+   
+    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 35%;
+	width: 120px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+
+
+
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 30px;
+}
+
+
+#reserv
+{
+	left:50px;
+}
+
+#reserv input
+{
+	color:white;
+	font-size: 15;
+}
+
+
+
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo1{
+    width:200px;
+    margin-bottom: 30px;
+}
+.col h3{
+    position: relative;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+.email_id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+.email_id a{
+    color: white;
+    text-decoration: none;
+}
+ul li{
+    list-style:none ;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.form1{
+    padding-bottom:15px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+.form1 .fa-regular{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.form1 input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+.form1 button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+.form1 button .fa-solid{
+    font-size: 16px;
+    color: #ccc;
+}
+.social .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    margin-right: 15px;
+    background: #fff;
+    color: #000;
+}
+.social .fa-brands:hover{
+    background:orangered;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin:20px auto;
+}
+.c{
+    text-align: center;
+    font-size: 2-px;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media(max-width:700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        
+    }
+    .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,orangered);
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1500px){
+    header .logo{
+        margin-left: -100px;
+        font-size: 15px;
+    }
+    header .navbar a{
+        font-size: 20px;
+    }
+
+}
+@media(max-width:1100px){
+header .logo{
+    margin-left: -80px;
+    font-size: 10px;
+}
+header .navbar a{
+    font-size: 10px;
+}
+
+}
+
+
+@media(max-width:991px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        padding: 2rem;
+    }
+    
+   header .navbar{
+    font-size: 20px;
+    margin-top: -5px;
+        height: 20px;
+    }
+   header .navbar a{
+    margin-top: 10px;
+
+    }
+    header .logo{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-left: -5px;
+        
+      
+    }
+    header button{
+        margin-right: -15px;
+    }
+    header{
+        height: 50px;
+    }
+   
+
+}
+
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    
+    header .navbar {
+        
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+       background-color: rgb(12, 12, 12);
+       height: 60vh;
+       clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(100% 0%,100% 100%,0 100%,0 0);
+        
+        
+   }
+    
+    
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0,0,0,0.1);
+        border-left: 0.5rem solid orangered ;
+        background: rgb(22, 22, 22);
+        margin-top: 8px;
+    }
+    header  .logo{
+       margin-right: -5px;
+        font-size: 13px;
+            margin-top: 5px;
+            margin-left: -5px;
+        
+    }
+    header{
+        height: 45px;
+    }
+    header button{
+        height: 30px;
+        margin-right: -15px;
+       
+        display: block;
+        border: .2rem solid rgba(0,0,0,0.1);
+        border-left: 0.5rem solid orangered ;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 5px;
+       
+
+    }
+    #menu-bar{
+        margin-left: 5px;
+    }
+    
+    
+}
+@media(max-width:400px){
+    html{
+        font-size: 50%;
+    }
+    header .logo{
+        font-size: 20px;
+            margin-top: 10px;
+            margin-left: 1px;
+        
+    }
+  
+   
+    
+
+}
